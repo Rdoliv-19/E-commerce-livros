@@ -10,7 +10,8 @@
 .menu{
     display: flex;
     justify-content: space-between;
-    background-color: var(--branco)
+    background-color: var(--branco);
+    position: relative;
 
 }
 
@@ -21,4 +22,38 @@
 
 .menu-container-icone{
     padding: 1em;
+}
+
+.menu-lista{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: var(--branco);
+    width: 60vw;
+}
+
+.menu-container-botao:checked ~ .menu-lista{
+    display: block;
+}
+
+.menu-lista-titulo, .menu-lista-item{
+    padding: 1em;
+}
+
+.menu-lista-titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.menu-container-botao{
+    display: none;
+}
+
+.menu-lista-link{
+    background: var(--azul-gradiente);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-transform: uppercase;
 }

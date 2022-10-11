@@ -7,11 +7,35 @@
     <title>Alura Book</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="menu">
             <div class="menu-container">
-                <span class="menu-hamburguer menu-container-icone"></span>
+                <input type="checkbox" id="menu" class="menu-container-botao">
+                <label for="menu">
+                    <span class="menu-hamburguer menu-container-icone"></span>
+                </label>
+                <ul class="menu-lista">
+                    <li class="menu-lista-titulo">Categorias</li>
+                    <li class="menu-lista-item">
+                        <a href="#" class="menu-lista-link">Programação</a>
+                    </li>
+                    <li class="menu-lista-item">
+                        <a href="#" class="menu-lista-link">Front-End</a>
+                    </li>
+                    <li class="menu-lista-item">
+                        <a href="#" class="menu-lista-link">Infraestrutura</a>
+                    </li>
+                    <li class="menu-lista-item">
+                        <a href="#" class="menu-lista-link">Business</a>
+                    </li>
+                    <li class="menu-lista-item">
+                        <a href="#" class="menu-lista-link">Design & UX</a>
+                    </li>
+                </ul>
                 <a href="#"><img src="./img/Logo (3).png" class="menu-container-icone"></a>
             </div>
             <div class="menu-container">
@@ -19,6 +43,12 @@
                 <a href="#"><img src="./img/sacola.png" class="menu-container-icone"></a>
                 <a href="#"><img src="./img/usuario.png" class="menu-container-icone"></a>
             </div>         
-    </header>    
+    </header>
+    
+    <section class="banner">
+        <h2 class="banner-titulo">Já sabe por onde começar?</h2>
+        <p class="banner-texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner-pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
 </body>
 </html>
