@@ -1,54 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Book</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    />
 </head>
+
 <body>
     <header class="menu">
-            <div class="menu-container">
-                <input type="checkbox" id="menu" class="menu-container-botao">
-                <label for="menu">
-                    <span class="menu-hamburguer menu-container-icone"></span>
-                </label>
-                <ul class="menu-lista">
-                    <li class="menu-lista-titulo">Categorias</li>
-                    <li class="menu-lista-item">
-                        <a href="#" class="menu-lista-link">Programação</a>
-                    </li>
-                    <li class="menu-lista-item">
-                        <a href="#" class="menu-lista-link">Front-End</a>
-                    </li>
-                    <li class="menu-lista-item">
-                        <a href="#" class="menu-lista-link">Infraestrutura</a>
-                    </li>
-                    <li class="menu-lista-item">
-                        <a href="#" class="menu-lista-link">Business</a>
-                    </li>
-                    <li class="menu-lista-item">
-                        <a href="#" class="menu-lista-link">Design & UX</a>
-                    </li>
-                </ul>
-                <a href="#"><img src="./img/Logo (3).png" class="menu-container-icone"></a>
-            </div>
-            <div class="menu-container">
-                <a href="#"><img src="./img/coração.png" class="menu-container-icone"></a>
-                <a href="#"><img src="./img/sacola.png" class="menu-container-icone"></a>
-                <a href="#"><img src="./img/usuario.png" class="menu-container-icone"></a>
-            </div>         
+        <div class="menu-container">
+            <input type="checkbox" id="menu" class="menu-container-botao">
+            <label for="menu">
+                <span class="menu-hamburguer menu-container-icone"></span>
+            </label>
+            <ul class="menu-lista">
+                <li class="menu-lista-titulo">Categorias</li>
+                <li class="menu-lista-item">
+                    <a href="#" class="menu-lista-link">Programação</a>
+                </li>
+                <li class="menu-lista-item">
+                    <a href="#" class="menu-lista-link">Front-End</a>
+                </li>
+                <li class="menu-lista-item">
+                    <a href="#" class="menu-lista-link">Infraestrutura</a>
+                </li>
+                <li class="menu-lista-item">
+                    <a href="#" class="menu-lista-link">Business</a>
+                </li>
+                <li class="menu-lista-item">
+                    <a href="#" class="menu-lista-link">Design & UX</a>
+                </li>
+            </ul>
+            <a href="#"><img src="./img/Logo (3).png" class="menu-container-icone"></a>
+        </div>
+        <div class="menu-container">
+            <a href="#"><img src="./img/coração.png" class="menu-container-icone"></a>
+            <a href="#"><img src="./img/sacola.png" class="menu-container-icone"></a>
+            <a href="#"><img src="./img/usuario.png" class="menu-container-icone"></a>
+        </div>
     </header>
-    
+
     <section class="banner">
         <h2 class="banner-titulo">Já sabe por onde começar?</h2>
         <p class="banner-texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner-pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+
+    <section class="carrocel">
+        <h2 class="carrocel-titulo">Mais vendidos</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./img/ApacheKafka.png" alt="Livro sobre Apache Kafka"></div>
+                <div class="swiper-slide"><img src="./img/Construct2.png" alt="Livro sobre Construct"></div>
+                <div class="swiper-slide"><img src="./img/Liderança.png" alt="Livro sobre liderança"></div>
+                <div class="swiper-slide"><img src="./img/Portugol.png" alt="Livro sobre Portugol"></div>
+                <div class="swiper-slide"><img src="./img/MetricasAgeis.png" alt="Livro sobre Metricas Ageis"></div>
+                <div class="swiper-slide"><img src="./img/Tuning.png" alt="Livro sobre Tuning"></div>
+            </div>
+
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+
 </body>
+
 </html>
