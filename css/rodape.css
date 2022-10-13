@@ -1,11 +1,38 @@
 .rodape{
     background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 4em;
+}
+
+.rodape-lista{
+    display: none;
 }
 
 .rodape-titulo{
     padding: 1em;
 }
 
-hr{
-    background-color: var(--branco);
+.rodape-lista-item{
+  display: flex;
+  align-items: center;
+    margin: 1em;
+}
+
+.lista-rodape-titulo{
+    font-size: 14px;
+    color: var(--cinza-claro);
+    margin-bottom: 1em;
+}
+
+.lista-rodape-texto{
+    color: var(--cinza-escuro);
+    font-size: 14px;
+    margin-left: 0.5em;
+}
+
+@media screen and (min-width:1024px){
+    .rodape-lista{
+        display: block;
+    }
 }
