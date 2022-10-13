@@ -12,7 +12,7 @@
     justify-content: space-between;
     background-color: var(--branco);
     position: relative;
-
+    align-items: center;
 }
 
 .menu-container{
@@ -56,4 +56,56 @@
     background-clip: text;
     text-fill-color: transparent;
     text-transform: uppercase;
+}
+
+.menu-logo-titulo{
+    display: none;
+}
+
+.menu-desktop{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .menu-logo-titulo{
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+        font-weight: 400;
+        display: block;
+    }
+
+    .menu-logo-titulo-negrito{
+        font-weight: 700;
+    }
+
+    .menu-desktop{
+        display: flex;
+    }
+
+    .menu-desktop-item{
+        margin-right: 4em;
+    }
+
+    .menu-desktop-link{
+        text-transform: uppercase;
+        color: var(--preto);
+    }
+
+    .link-favoritos{
+        display: none;
+    }
+
+    .menu-hamburguer{
+        display: none;
+    }
+
+    .menu-desktop-botao:checked ~ .menu-lista{
+        display: block;
+        width: auto;
+    }
+
+    .menu-desktop-botao{
+        display: none;
+    }
+   
 }

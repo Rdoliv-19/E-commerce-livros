@@ -5,6 +5,7 @@
 @import url("contato.css");
 @import url("rodape.css");
 
+
 :root{
     --cor-de-fundo: #EBECEE;
     --branco: #ffffff;
@@ -12,6 +13,8 @@
     --azul-gradiente: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --fonte-principal: "Poppins";
     --azul:#002F52;
+    --fonte-secundaria: "Josefin Sans";
+    --fonte-preto: #000000;
 }
 
 body{
