@@ -35,4 +35,20 @@
     .rodape-lista{
         display: block;
     }
+
+    .lista-rodape-texto:hover{
+        color:orange;
+    }
+
+}
+
+@media screen and (min-width: 1728px){
+
+    .rodape{
+        padding:3em 4em;
+    }
+
+    .rodape-lista{
+        border-left: 1px solid var(--cinza-claro);
+    }
 }

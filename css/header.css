@@ -24,6 +24,10 @@
     padding: 1em;
 }
 
+.menu-container-texto{
+    display: none;
+}
+
 .menu-lista{
     display: none;
     position: absolute;
@@ -35,6 +39,7 @@
 .menu-container-botao:checked ~ .menu-lista{
     display: block;
 }
+
 
 .menu-lista-titulo, .menu-lista-item{
     padding: 1em;
@@ -84,6 +89,7 @@
 
     .menu-desktop-item{
         margin-right: 4em;
+        text-transform: uppercase;
     }
 
     .menu-desktop-link{
@@ -107,5 +113,24 @@
     .menu-desktop-botao{
         display: none;
     }
+
    
+}
+
+@media screen and (min-width: 1500px){
+    .menu-container-texto{
+        display: block;
+    }
+    
+    .menu{
+        padding: 0 1em;
+    }
+
+    .menu-desktop{
+        margin-right: auto;
+    }
+
+    .menu-logo-titulo{
+        margin-right: 1em;
+    }
 }
